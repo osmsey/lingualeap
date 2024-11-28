@@ -1,0 +1,27 @@
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "npm"
+    # Look for package.json in root directory
+    directory: "/"
+    # Check for updates daily
+    schedule:
+      interval: "daily"
+    # Label for pull requests
+    labels:
+      - "dependencies"
+    # Group updates
+    groups:
+      # Group all non-major npm updates
+      dependencies:
+        patterns:
+          - "*"
+        update-types: 
+          - "minor"
+          - "patch"
+
+  # GitHub Actions updates
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
