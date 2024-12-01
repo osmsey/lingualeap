@@ -32,6 +32,7 @@ const SignInPage: React.FC = () => {
       router.push("/profile"); // Redirect to profile page on successful login
     } catch (err: unknown) {
       setError("Invalid email or password."+ err);
+      
     }
   };
 
