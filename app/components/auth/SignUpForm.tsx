@@ -34,8 +34,8 @@ const SignUpPage: React.FC = () => {
     try {
       await createUserWithEmailAndPassword(auth, data.email, data.password);
       router.push("/profile"); // Redirect to profile page after successful signup
-    } catch (err: any) {
-      setError("Error creating account. Please try again.");
+    } catch (err: unknown) {
+      setError("Error creating account. Please try again." + err);
     }
   };
 
