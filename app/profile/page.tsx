@@ -13,6 +13,7 @@ const ProfilePage: React.FC = () => {
     await signOut();
     router.push("/sign-in");
   };
+  
 
   if (loading) return <p>Loading...</p>;
 
