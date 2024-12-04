@@ -9,6 +9,3 @@ permissions:
   pages: write
   id-token: write
 jobs:
-  Build and Test Job
-  build-and-test:
-    runs-on: ubuntu-latest
