@@ -37,6 +37,17 @@ const ProfilePage: React.FC = () => {
             </div>
             
             <Button 
+             
+              className="w-full h-12 bg-error-600 text-white rounded-md hover:bg-error-700 transition-colors font-body-bold shadow-sm"
+            >
+               <Link
+          href="/exercises"
+          className="rounded-md border-0 transition-colors flex items-center justify-center bg-brand-600 text-white hover:bg-brand-700 font-body-bold h-12 px-8 min-w-[200px] text-center shadow-sm"
+        >
+          Generate Exercises
+        </Link>
+            </Button>
+            <Button 
               onClick={handleSignOut} 
               className="w-full h-12 bg-error-600 text-white rounded-md hover:bg-error-700 transition-colors font-body-bold shadow-sm"
             >

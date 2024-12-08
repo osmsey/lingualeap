@@ -18,6 +18,12 @@ export default function Home() {
           Sign Up
         </Link>
         <Link
+          href="/exercises"
+          className="rounded-md border-0 transition-colors flex items-center justify-center bg-brand-600 text-white hover:bg-brand-700 font-body-bold h-12 px-8 min-w-[200px] text-center shadow-sm"
+        >
+          Generate Exercises
+        </Link>
+        <Link
           href="/profile"
           className="rounded-md border border-solid border-neutral-200 transition-colors flex items-center justify-center bg-white text-neutral-900 hover:bg-neutral-50 font-body h-12 px-8 min-w-[200px] text-center shadow-sm"
         >

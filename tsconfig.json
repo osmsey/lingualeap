@@ -18,15 +18,15 @@
         "name": "next"
       }
     ],
-    
     "baseUrl": ".",
-        "paths": {
+    "paths": {
           "@/*": ["./*"],
           "@/lib/*": ["app/lib/*"],
           "@/components/*": ["app/components/*"],
           "@/hooks/*": ["app/hooks/*"],
           "@/contexts/*": ["app/contexts/*"],
-          "@/types/*": ["app/types/*"]
+          "@/types/*": ["app/types/*"],
+          "@/constants/": ["app/constants/*"]
         }
   ,
     
